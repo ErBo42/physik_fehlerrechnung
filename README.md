@@ -1,3 +1,5 @@
-Programm zur automatisierten Fehlerberechnung von physikalischen Experimenten.
+Programm zur Fehlerberechnung für mein Physik Praktikum
 
-Im Moment nur Berechnung von Mittelwert, Standardabweichung der Einzelmessung und des Mittelwertes.
+
+Kann über main.py gestartet werden. # vor statistik oder fehler löschen.
+statistik für mittelwert und Standardabweichungen. Fehler für Spezialfälle der Fehlerfortpflanzung.
