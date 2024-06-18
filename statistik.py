@@ -1,12 +1,13 @@
 import math
+import tkinter as tk
+
+
 
 def to_list():
-    mess_list = []
-    anz_mess = int(input("Anzahl der Messungen: "))
-    for i in range(anz_mess):
-        messwert = float(input("Messwert: "))
-        mess_list.append(messwert)
-    return mess_list
+    a = list(map(int, input("Enter the numbers : ").strip().split()))
+
+    return a
+
 
 def mittelwert(mess_list):
     num_mess = len(mess_list)
@@ -17,7 +18,7 @@ def mittelwert(mess_list):
     return mittel
 
 
-def standardabweichung_einz(mess_list,anz_mess, mittel):
+def standardabweichung_einz(mess_list, anz_mess, mittel):
     add_mess = 0
     for i in mess_list:
         add_mess = add_mess + (i-mittel)**2
@@ -39,3 +40,6 @@ def statistik():
     print("Mittelwert:", mittel)
     print("Standardabweichung der Einzelmessung:", stan_abw_einz)
     print("Standardabweichung des Mittelwertes:", stan_abw_mittel)
+
+
+statistik()
